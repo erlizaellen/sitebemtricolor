@@ -1,0 +1,221 @@
+/* Define a fonte padrão do site */
+/* Erliza */
+:root {
+    --fonte-principal: "Inter", Arial, sans-serif;
+    --fonte-secundaria: "IBM Plex Sans", Helvetica, sans-serif;
+    --fonte-destaque: "Koulen", "Courier New", cursive;
+    
+}
+
+
+body {
+    font-family: var(--fonte-principal);
+}
+h1, h2 {
+    font-family: var(--fonte-destaque);
+}
+p {
+    font-family: var(--fonte-secundaria);
+     font-size: 20px;
+    color: #f5efef;
+
+}
+.landing-page {
+    width: 1500px;
+    height:4819px;
+    top:-495px;
+    left: -859px;
+    background-color: #1b1c61;
+    border :solid 1px red;
+  
+} 
+/*Header Erliza */
+  .frame {
+            width: 1500px;
+            height: 172px;
+            background-color: #e2e5eb;
+            position: absolute;
+            top: -495px;
+            left: -859px;
+            opacity: 0;
+            flex-direction: row;
+            
+   }
+
+/*Cores do header */
+#retangulo3 {
+    width: 1500px;
+    height: 28px;
+    background-color: #2F2655;
+}
+#retangulo4 {
+    width: 1500px;
+    height: 28px;
+    background-color: #cc1235;
+}
+header {
+ width: 1500px;
+ height: 86px;
+ align-items:center;
+ background-color: #f5f5f5;
+ display: flex;
+justify-content: space-between; 
+
+    
+}
+nav ul  {
+    font-family: 'Inter', sans-serif; 
+    width: 800px;
+  list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+}
+
+
+/*BANNER */
+
+
+#banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 501px;
+}
+
+.container-banner {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 501px;
+    background-image: url(./img/Bg-topo\ 1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*tirando a imagem fica ao lado */
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-sobreposta {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.banner-conteudo {
+    width: 923px;
+    height: 52px;
+    text-align: center;
+    font-family:var(--fonte-principal);
+   
+}
+
+
+
+.banner-conteudo p {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/*QUEM SOMOS */
+
+
+#quem-somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1439px;
+    min-height: 562px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color:#c6c6d8;
+    background-image: url(./img/bgTvLeao_Home3.png);
+}
+
+/* esquerda - Imagem container */
+.quem-somos-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    background-image: url(./img/bgTvLeao_Home3.png);
+
+}
+
+.quem-somos-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    background-image: url(./img/bgTvLeao_Home3.png);
+}
+
+/* direita - Content container */
+.quem-somos-content {
+    flex: 1;
+    max-width: 45%;
+    padding: 2rem;
+}
+
+/* estilos de titulos */
+.quem-somos-content h2 {
+    color: #E31C2C;  
+    font-size: 2.5rem;
+    font-weight: var(--fonte-destaque);
+    margin-bottom: 1.5rem;
+}
+
+
+.quem-somos-content p {
+    color: #36345a;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Botão*/
+.saiba-mais {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #2f2655;  
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* EVENTOS */
+
+#container-eventos {
+    display: flex;
+  background-size: cover;
+    flex-direction: column; /* Ajuste para empilhar conteúdo */
+    align-items: center; /* Centraliza elementos */
+    justify-content: center; /* Alinha verticalmente */
+    width: 100%;
+    max-width: 1500px; /* Para manter um limite */
+    min-height: 562px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
