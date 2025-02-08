@@ -3,35 +3,60 @@
 :root {
     --fonte-principal: "Inter", Arial, sans-serif;
     --fonte-secundaria: "IBM Plex Sans", Helvetica, sans-serif;
-    --fonte-destaque: "Koulen", "Courier New", cursive;
+    --fonte-destaque: "Koulen", "Courier New",cursive;
+   --caixa:"close-button"
     
 }
 
 
 body {
     font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    margin: 0;
+    
+  
 }
 h1, h2 {
     font-family: var(--fonte-destaque);
+    color:#ffffff;
+    font-size: 50px;
+    line-height: 34px;
+    
 }
+h3{
+    font-family: var(--fonte-principal);
+    color: white;
+    font-size: 24px;
+    
+}
+
 p {
-    font-family: var(--fonte-secundaria);
-     font-size: 20px;
+    font-family: var(--fonte-principal);
+     font-size: 16px;
     color: #f5efef;
+
 
 }
 .landing-page {
-    width: 1500px;
-    height:4819px;
+    width: 1439px;
     top:-495px;
     left: -859px;
     background-color: #1b1c61;
-    border :solid 1px red;
-  
-} 
+    
+    background-image: url(./img/bgTvLeao_Home1.png);
+    padding-bottom: 7000px;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+}
+main {
+    flex-grow: 1; /* Faz o conteúdo expandir e empurrar o footer para baixo */
+}
+
 /*Header Erliza */
   .frame {
-            width: 1500px;
+            width: 1440px;
             height: 172px;
             background-color: #e2e5eb;
             position: absolute;
@@ -44,19 +69,20 @@ p {
 
 /*Cores do header */
 #retangulo3 {
-    width: 1500px;
+    width: 1439px;
     height: 28px;
     background-color: #2F2655;
 }
 #retangulo4 {
-    width: 1500px;
+    width: 1439px;
     height: 28px;
     background-color: #cc1235;
 }
 header {
- width: 1500px;
+ width: 1440px;
  height: 86px;
  align-items:center;
+ box-sizing: border-box;
  background-color: #f5f5f5;
  display: flex;
 justify-content: space-between; 
@@ -66,10 +92,10 @@ justify-content: space-between;
 nav ul  {
     font-family: 'Inter', sans-serif; 
     width: 800px;
-  list-style: none;
+    list-style: none;
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;/*tinha colocado o between por isso que o contato estava colado a borda */
     gap: 10px; 
 }
 
@@ -83,14 +109,13 @@ nav ul  {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 1440px;
     height: 501px;
 }
 
 .container-banner {
     position: relative;
-    width: 100%;
-    max-width: 1500px;
+    width: 1440px;
     height: 501px;
     background-image: url(./img/Bg-topo\ 1.png);
     background-size: cover;
@@ -117,7 +142,8 @@ nav ul  {
 
 
 .banner-conteudo p {
-    font-size: 30px;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
     line-height: 24px;
     font-weight: 500;
     margin-top: 10px;
@@ -131,10 +157,11 @@ nav ul  {
     align-items: center;
     justify-content: space-between;
     width: 1439px;
-    min-height: 562px;
+    height: 562px;
     margin: 0 auto;
     padding: 2rem;
-    background-color:#c6c6d8;
+    background-color: #c6c6d8;
+    box-sizing: border-box;
     background-image: url(./img/bgTvLeao_Home3.png);
 }
 
@@ -144,16 +171,12 @@ nav ul  {
     max-width: 50%;
     height: auto;
     background-image: url(./img/bgTvLeao_Home3.png);
+    width: 1440px;
+    background-color: #c6c6d8;
 
 }
 
-.quem-somos-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
-    background-image: url(./img/bgTvLeao_Home3.png);
-}
+
 
 /* direita - Content container */
 .quem-somos-content {
@@ -165,7 +188,7 @@ nav ul  {
 /* estilos de titulos */
 .quem-somos-content h2 {
     color: #E31C2C;  
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     font-weight: var(--fonte-destaque);
     margin-bottom: 1.5rem;
 }
@@ -191,27 +214,263 @@ nav ul  {
 
 /* EVENTOS */
 
-#container-eventos {
+.container-eventos {
+   
     display: flex;
-  background-size: cover;
-    flex-direction: column; /* Ajuste para empilhar conteúdo */
-    align-items: center; /* Centraliza elementos */
-    justify-content: center; /* Alinha verticalmente */
-    width: 100%;
-    max-width: 1500px; /* Para manter um limite */
-    min-height: 562px;
-    margin: 0 auto;
-    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+}
+#evento{
+   
+   display: flex;
+   flex-direction: column;
+    width: 1439px;
+margin: 0;
+    padding: 0; 
+    background-image:url(./img/bgTvLeao_Home1.png);
+    background-repeat: no-repeat;
+
+}
+#eventoh2 {
+
+    display: flex;
+    height: 100px;
+    margin: 80px;
+    padding-left:550px;
+    font-size: 28px; /* 64px estava muito grande */
+    text-align: center;
+    color: #ffffff;  
+    font-weight: var(--fonte-destaque);
+   
+}
+
+ /* DIVS  */
+  .container-eventocaixas{
+width: 1040px;
+height: 197px;
+margin: 200px;
+
+border-radius: 6px;
+align-items: center;
+justify-items: center;
+box-sizing: border-box;
+align-items: center;
+justify-items: center;
+
+       
+}
+
+
+ .caixa {
+ display: flex;
+ position: relative; /* Necessário para o botão se posicionar dentro dela */
+ background-image: var(--caixa);
+width: 1040px;
+height: 197px;
+margin:20px;
+border-radius: 6px;
+border:20px;
+background-color:#0E1116;
+flex-direction: column;
+align-items: flex-start; /* mantém o alinhamento à esquerda */
+text-align: left;
+padding: 40px; /* ajuste conforme necessário */
+gap: 10px; /* Espaçamento entre título e texto */
+
+           
 }
 
 
 
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 40px;
+}
+.container-eventocaixas h1{
+    padding: 100px;
+    margin: 40px;
+
+   
+}
 
 
+.container-imagens{
+
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around; 
+    gap:10px;
+    height: 900px;
 
 
+    
+}
+
+   /* DIV - PROJETOS */
 
 
+   .container-projetos {
+    width: 1439px;
+    padding: 20px 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+   
+}
+
+.titulo-projetos img {
+    width: 90px; 
+    height: auto;
+    margin:2px;
+    vertical-align:auto; /* Garante alinhamento vertical */
+}
+
+.titulo-projetos h2 {
+    color: #cc1235;
+    font-size: 60px;
+    margin: 30px;
+    padding: 0;
+    line-height:-2; 
+}
+.container-projetos p{
+    font-family: var(--fonte-principal);
+    font-size:24px;
+    color :#110f37;
+    line-height: 34px;
+    
+}
+.container-projetoimagens{
+    background-color: #d9d9d9;
+    padding: 100px;
+   
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: #0A1A4A; /* Cor azul do fundo */
+    color: white;
+    padding: 30px 0;
+    text-align: left;
+    align-content: flex-end;
+    width: 100%;
+    
+}
+
+.footer-container {
+    max-width: 1200px; /* Limitando largura para melhor alinhamento */
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos de forma uniforme */
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite ajuste em telas menores */
+   padding: 20px;
+  
+}
+
+.footer-logo {
+    flex: 1; /* Ocupa espaço disponível */
+    min-width: 250px; /* Garante que a logo não fique muito pequena */
+    text-align: center;
+    padding-right: 800px;
+}
+
+.footer-logo img {
+    height: 120px;
+    margin-bottom: -15px;
+}
+
+.pix-key {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: -70px;
+    line-height:25;
+}
+
+.social-icons  {
+    margin-top: -45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.social-icons img {
+    line-height: 10px;
+    width: 40px;
+   
+    height: auto;
+    transform: translatex(-850%);
+   
+}
+
+
+.footer-links {
+    
+    flex: 1;
+    min-width: 200px;
+    transform: translateY(50%);
+    
+}
+
+.footer-links h3 {
+    
+    font-family: var(--fonte-destaque);
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+  margin-top: -110%;
+    
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    
+    
+
+}
+
+.footer-links ul li {
+    margin: 12px 0;
+    
+}
+
+.footer-links ul li a {
+    font-family: var(--fonte-principal);
+    color: #E31C2C; /* Vermelho do design */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+   
 
 
 
