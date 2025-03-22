@@ -13,7 +13,7 @@ body {
     font-family: var(--fonte-principal);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    min-height: 100%; /* Garante que o corpo ocupe toda a altura da tela */
     margin: 0;
     
   
@@ -39,24 +39,25 @@ p {
 
 
 }
-.landing-page {
-    width: 1439px;
+
+    
+
+main {
+    width: 100%;
     top:-495px;
     left: -859px;
     background-color: #1b1c61;
     
     background-image: url(./img/bgTvLeao_Home1.png);
-    padding-bottom: 7000px;
+    
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição */
-}
-main {
     flex-grow: 1; /* Faz o conteúdo expandir e empurrar o footer para baixo */
 }
 
 /*Header Erliza */
   .frame {
-            width: 1440px;
+    width: 100%;
             height: 172px;
             background-color: #e2e5eb;
             position: absolute;
@@ -69,17 +70,17 @@ main {
 
 /*Cores do header */
 #retangulo3 {
-    width: 1439px;
+    width: 100%;
     height: 28px;
     background-color: #2F2655;
 }
 #retangulo4 {
-    width: 1439px;
+    width: 100%;
     height: 28px;
     background-color: #cc1235;
 }
 header {
- width: 1440px;
+    width: 100%;
  height: 86px;
  align-items:center;
  box-sizing: border-box;
@@ -109,13 +110,13 @@ nav ul  {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 1440px;
+    width: 100%;
     height: 501px;
 }
 
 .container-banner {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 501px;
     background-image: url(./img/Bg-topo\ 1.png);
     background-size: cover;
@@ -156,7 +157,7 @@ nav ul  {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1439px;
+    width: 100%;
     height: 562px;
     margin: 0 auto;
     padding: 2rem;
@@ -171,7 +172,7 @@ nav ul  {
     max-width: 50%;
     height: auto;
     background-image: url(./img/bgTvLeao_Home3.png);
-    width: 1440px;
+    width: 100%;
     background-color: #c6c6d8;
 
 }
@@ -226,7 +227,7 @@ nav ul  {
    
    display: flex;
    flex-direction: column;
-    width: 1439px;
+   width: 100%;
 margin: 0;
     padding: 0; 
     background-image:url(./img/bgTvLeao_Home1.png);
@@ -248,9 +249,8 @@ margin: 0;
 
  /* DIVS  */
   .container-eventocaixas{
-width: 1040px;
-height: 197px;
-margin: 200px;
+
+margin: 100px;
 
 border-radius: 6px;
 align-items: center;
@@ -264,10 +264,10 @@ justify-items: center;
 
 
  .caixa {
- display: flex;
+ 
  position: relative; /* Necessário para o botão se posicionar dentro dela */
  background-image: var(--caixa);
-width: 1040px;
+ width: 100%;
 height: 197px;
 margin:20px;
 border-radius: 6px;
@@ -277,7 +277,7 @@ flex-direction: column;
 align-items: flex-start; /* mantém o alinhamento à esquerda */
 text-align: left;
 padding: 40px; /* ajuste conforme necessário */
-gap: 10px; /* Espaçamento entre título e texto */
+
 
            
 }
@@ -321,7 +321,7 @@ gap: 10px; /* Espaçamento entre título e texto */
 
 
    .container-projetos {
-    width: 1439px;
+    width: 100%;
     padding: 20px 0;
     background-color: #ffffff;
     display: flex;
@@ -359,7 +359,7 @@ gap: 10px; /* Espaçamento entre título e texto */
 }
 .container-projetoimagens{
     background-color: #d9d9d9;
-    padding: 100px;
+    padding: 10px;
    
 }
 
